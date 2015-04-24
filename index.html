@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<p>click</p>
+<script src="chance.js"></script>
+<script src="wordlist.js"></script>
+<script>
+  document.body.firstElementChild.onclick = function () {
+    this.textContent = chance.pick(wordlist, 10).join(" ")
+  }
+</script>
