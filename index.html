@@ -6,5 +6,6 @@
 <script>
   document.body.firstElementChild.onclick = function () {
     this.textContent = chance.pick(wordlist, 10).join(" ")
+    window.getSelection().selectAllChildren(this)
   }
 </script>
